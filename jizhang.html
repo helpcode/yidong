@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/banner.css" type="text/css" rel="stylesheet" />
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+
+<link media="screen" rel="stylesheet" href="css/nav.css"/>
+<script src="js/nav.js" type="text/javascript"></script>
+
+<title>代理记账</title>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	});
+});
+</script>
+
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+
+  <!--顶部 logo 图层-->
+  <div class="logo">
+    <div class="logo_bj">
+      <img class="logo_img" alt="logo" src="images/logo.png" height="125" width="125">
+      <p>蚌埠光大会计有限公司</p>
+      <img class="logo_tel" alt="联系" src="images/tel.png" height="58" width="251"> 
+    </div>
+  
+  </div>
+  
+  <!--nav 菜单-->
+  <div class="head-v3">
+	<div class="navigation-up">
+		<div class="navigation-inner">
+			<div class="navigation-v3">
+				<ul>
+					<li class="nav-up-selected-inpage" _t_nav="home">
+						<h2>
+							<a href="index.html">首页</a>
+						</h2>
+					</li>
+					<li class="" _t_nav="product">
+						<h2>
+							<a href="#">公司介绍</a>
+						</h2>
+					</li>
+					<li class="" _t_nav="wechat">
+						<h2>
+							<a href="#">代理记账</a>
+						</h2>
+					</li>
+					<li class="" _t_nav="solution">
+						<h2>
+							<a href="#">工商注册</a>
+						</h2>
+					</li>
+					<li class="" _t_nav="cooperate">
+						<h2>
+							<a href="#">税务服务</a>
+						</h2>
+					</li>
+					<li _t_nav="support">
+						<h2>
+							<a href="#">资产评估</a>
+						</h2>
+					</li>
+                    <li _t_nav="nashi">
+						<h2>
+							<a href="#">招贤纳士</a>
+						</h2>
+					</li>
+                     <li _t_nav="lianxi">
+						<h2>
+							<a href="#">联系我们</a>
+						</h2>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="navigation-down">
+		<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+			<div class="navigation-down-inner">
+				<dl style="margin-left: 100px;">
+					<dt>我是标题 1</dt>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>我是标题 2</dt>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>我是标题 3</dt>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+					<dd>
+						<a href="#">内容</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="solution" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="solution">
+			<div class="navigation-down-inner">
+				<dl style="margin-left: 380px;">
+					<dd>
+						<a class="link" href="#">工商注册 的内容</a>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<a class="link" href="#">工商注册 的内容</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="support" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="support">
+			<div class="navigation-down-inner">
+				<dl style="margin-left: 610px;">
+					<dd>
+						<a class="link"  href="#">资产评估</a>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<a class="link"  href="#">资产评估</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="cooperate" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="cooperate">
+			<div class="navigation-down-inner">
+				<dl style="margin-left: 480px;">
+					<dd>
+						<a href="#">税务服务的内容</a>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<a href="#">税务服务的内容</a>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<a href="#">税务服务的内容</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+  
+  
+  <!-- banner 横幅 -->
+  <div class="flexslider">
+        <ul class="slides">
+            <li style="background:url(images/img1.jpg) 50% 0 no-repeat;"></li>
+            <li style="background:url(images/img2.jpg) 50% 0 no-repeat;"></li>
+            <li style="background:url(images/img3.jpg) 50% 0 no-repeat;"></li>
+        </ul>
+    </div>
+
+    <!-- js调用部分begin -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/banner.js"></script>
+    <script>
+    $(function(){
+        $('.flexslider').flexslider({
+            directionNav: true,
+            pauseOnAction: false
+        });
+    });
+    </script>
+
+  <div class="zhuti">
+    <!--公共导航区域-->
+    <div class="zhuti_left">
+      <div class="sm">
+        <h2>新闻公告&nbsp;&nbsp;<a href="#" target="_blank" title="More">More>></a></h2>
+        <ul>
+          <li><a href="#" title="中华人民共和国企业所得税法" target="_blank">中华人民共和国企业所得税法</a></li>
+          <li><a href="#" title="中华人民共和国个人所得税法" target="_blank">中华人民共和国个人所得税法</a></li>
+          <li><a href="#" title="注册公司所需所有资料" target="_blank">注册公司所需所有资料</a></li>
+          <li><a href="#" title="设立有限公司的流程" target="_blank">设立有限公司的流程</a></li>
+          <li><a href="#" title="营业执照办理流程" target="_blank">营业执照办理流程</a></li>
+          <li><a href="#" title="代理记账的法律依据" target="_blank">代理记账的法律依据</a></li>
+          <li><a href="#" title="代理记账的好处" target="_blank">代理记账的好处</a></li>
+          <li><a href="#" title="蚌埠光大会计有限公司会计代帐项目的服务" target="_blank">蚌埠光大会计有限公司会计代帐项目的服务</a></li>
+        </ul>
+      </div>
+      
+      <div class="zj">
+      <img alt="联系我们" src="images/conta.png" width="370" height="120">
+      <p>办公地址：蚌埠市体育路94号<br />
+         法定代表人：黄主任 15305525858<br />
+         联 系 人：赵经理 13170221502<br />
+         办公电话：0552-3032898<br />
+      </p>
+      </div>
+      
+    </div>
+    
+    <!--右侧内容介绍区域-->
+    <div class="zhuti_right">
+      <h2>代理记账</h2>
+      <p>&nbsp;&nbsp;蚌埠光大会计有限公司竭诚为您服务，财务代账是针对中小型企业而产生的一种服务模式。
+         很多中小型企业都没有完善的会计系统，承担专职会计的费用较高，选择财务代帐可以节省一笔开支。<br /><br />
+         &nbsp;&nbsp;财务代账主要内容是为企业进行建账、记账、出报表、登账、报税等财务活动，形式分为个人和公司代账，
+         个人代账就是个人会计为企业代账，优点是个人时间多，可以随时去公司处理日常账务出现的紧急问题，
+         缺点是没有法律保障，而且代账会计费用无法计出费用核算，并且一般会计技能单一，不能全盘核算一个企业的财务。<br /><br />
+          &nbsp;&nbsp;公司相对于个人来说要更加的安全，有合同做为保障，而且不受知识面的限制，可以全盘核算企业的财务。</p>
+    </div>
+    
+  
+  </div>
+
+
+
+
+ <!--底部版权信息--> 
+  <div class="foot">
+    <div class="foot_info">
+       <a href="#">首页</a>
+       <a href="#">公司介绍</a>
+       <a href="#">招贤纳士</a>
+       <a href="#">联系我们</a> 
+       <br />
+       <b>地址：</b>蚌埠市体育路94号&nbsp;
+       <b>固话：</b>0552-3032898&nbsp;
+       <b>手机：</b>15305525858&nbsp;
+       <b>联系人：</b>黄会计&nbsp;
+       <br />
+       蚌埠光大会计有限公司 版权所有 Copyright © 2013 All Right Reserve 免责申明 
+       <br />
+       皖ICP备13003865号
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
